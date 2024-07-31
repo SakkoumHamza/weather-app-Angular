@@ -1,1 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+font-family: "Ubuntu",sans-serif;
+margin: 0;
+height: 100vh;
+width: 100%;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.upper-part{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.upper-part img{
+    width: 100%;
+}
+.lower-part{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(228, 233, 238);
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+
+
+
+
+
+/*  -----------------     */
+/*  waving background    */
+/*  -----------------   */
+                    .page{
+                    height: 100vh;
+                    }
+                    .page::before{
+                        content: "";
+                        position: fixed;
+                        width: 300%;
+                        height: 100%;
+                        background-color: #0075ff;
+                        left: 50%;
+                        top:50%;
+                        transform: translateX(-50%) skew(0,-10deg);
+                        border-radius: 50%;
+                        z-index: -1;
+                        animation: waving 5s ease-in-out infinite alternate;
+                        
+                    }
+                    
+                    @Keyframes waving{
+                        from{
+                            transform: translateX(-50%) skew(0,-10deg);
+                        }
+                        to{
+                            transform: translateX(-30%) skew(10deg,0);
+                        }
+                    }
+                    
+/*  -----------------     */
+/*                       */
+/*  -----------------   */
