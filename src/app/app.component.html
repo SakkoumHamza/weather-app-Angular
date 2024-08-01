@@ -1,13 +1,65 @@
 <div class="page">
   <div class="container">
+  
+  
     <div class="upper-part">
     <img src="../assets/night.jpg" *ngIf="14<15" alt=""/>
     <img src="../assets/day.jpg" *ngIf="14>=15" alt=""/>
     <img src="../assets/maghreb.jpg" *ngIf="14>15" alt=""/>
-
+      <div class="weather-data">
+          <div class="location">Nador</div>
+          <div class="temperature">14 °C</div>
+      </div>
     </div>
+    
+    
     <div class="lower-part">
+    
+      <div class="more-info-label"> More information</div>
       
+        <div class="more-info-container">
+          
+            <div class="info-block">
+              <div class="info-block-label">
+                <img src="../assets/min.png" alt="">
+                <span>min</span>
+              </div>
+              <div class="info-block-value">
+                10 °C
+              </div>
+            </div>
+            
+            <div class="info-block">
+                <div class="info-block-label">
+                  <img src="../assets/max.png" alt="">
+                  <span>max</span>
+                </div>
+                <div class="info-block-value">
+                  10 °C
+                </div>
+            </div>
+            
+            <div class="info-block">
+              <div class="info-block-label">
+                <img src="../assets/wind.png" id="wind" alt="">
+                <span>wind</span>
+              </div>
+              <div class="info-block-value" >
+                11.83 km/h
+              </div>
+            </div>
+            
+            <div class="info-block">
+              <div class="info-block-label">
+                <img src="../assets/rain.png" id="rain" alt="">
+                <span>min</span>
+              </div>
+              <div class="info-block-value">
+                85%
+              </div>
+            </div>
+            
+        </div>
     </div>
   </div>
 </div>
